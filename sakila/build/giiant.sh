@@ -1,0 +1,12 @@
+./yii giiant-batch \
+    --interactive=0 \
+    --overwrite=1 \
+    --enableI18N=1 \
+    --messageCategory=app \
+    --modelNamespace=giiant\\sakila\\models \
+    --crudControllerNamespace=giiant\\sakila\\controllers \
+    --crudSearchModelNamespace=giiant\\sakila\\models\\search \
+    --crudViewPath=@app/extensions/sakila/views \
+    --crudPathPrefix= \
+    --crudProviders=schmunk42\\giiant\\crud\\providers\\DateTimeProvider \
+    --tables=actor,address,category,city,country,customer,film,film_actor,film_category,film_text,inventory,language,payment,rental,staff,store
